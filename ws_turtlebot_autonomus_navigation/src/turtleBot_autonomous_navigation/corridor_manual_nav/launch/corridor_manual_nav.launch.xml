@@ -1,0 +1,4 @@
+
+<launch>
+    <node pkg="corridor_manual_nav"  exec="corridor_navigator"  name="corridor_navigator_node" output="screen"/>
+</launch>

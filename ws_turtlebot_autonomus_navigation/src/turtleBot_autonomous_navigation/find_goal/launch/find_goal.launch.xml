@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find-pkg-share find_goal)/launch/camera_36h11.launch.yml" />
+
+  <node pkg="find_goal" exec="find_goal_nodes" name="find_goal_nodes" output="screen" />
+</launch>

@@ -1,0 +1,32 @@
+launch:
+
+  - node_container:
+      pkg: rclcpp_components
+      exec: component_container
+      name: apriltag_container 
+      namespace: ""
+      composable_node:
+
+        - pkg: image_proc
+          plugin: image_proc::RectifyNode
+          name: rectify_node
+          namespace: "rgb_camera" 
+        
+          extra_arg:
+            - name: use_intra_process_comms
+              value: "True"
+
+        - pkg: apriltag_ros
+          plugin: AprilTagNode
+          name: apriltag_node 
+          namespace: "rgb_camera" 
+          remap:
+            - from: detections
+              to: /apriltag/detections
+
+          param:
+            - from: $(find-pkg-share find_goal)/cfg/tags_36h11.yaml
+     
+          extra_arg:
+            - name: use_intra_process_comms
+              value: "True"

@@ -1,0 +1,15 @@
+<launch>
+
+    <include file="$(find-pkg-share ir_launch)/launch/assignment_1.launch.py"/>
+
+    <include file="$(find-pkg-share obstacles_detection)/launch/obstacles_detection.launch.xml"/>
+
+    <include file="$(find-pkg-share navigation)/launch/navigation.launch.xml"/>
+
+    <include file="$(find-pkg-share find_goal)/launch/find_goal.launch.xml"/>
+
+    <include file="$(find-pkg-share detection_corridor)/launch/detection_corridor.launch.xml"/>
+
+    <include file="$(find-pkg-share corridor_manual_nav)/launch/corridor_manual_nav.launch.xml"/>
+   
+</launch>

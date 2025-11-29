@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="detection_corridor" exec="corridor_detector" name="corridor_detector" output="screen" />
+</launch>

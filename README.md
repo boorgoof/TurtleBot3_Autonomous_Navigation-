@@ -48,10 +48,14 @@ ros2 launch g4_launch [launch_file_name]
 
 ## Fast commands:
 
-To build and launch the program is possible to use the following commands:
-
+### To build the program, just write in the terminal:
 `./build.sh`
-`./run.sh` or `./run_2.sh`
+
+### To run the program, just write in the terminal:
+`./run.sh`
+
+### To run the program v2, just write in the terminal:
+`./run_2.sh`
 
 ## Node Diagram
 

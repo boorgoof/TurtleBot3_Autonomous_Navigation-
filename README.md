@@ -1,10 +1,8 @@
-To see the original repository: https://github.com/CaregnatoGianluca/group_number_4_assignment_1
+To see the original repository: https://github.com/CaregnatoGianluca/TurtleBot-Autonomous-navigation
 
 **Authors:** Matteo Bino, Gianluca Caregnato, Federico Meneghetti  
 
 ## Project Overview
-
-This repository contains the implementation for the **Assignment 1** (see the pdf).
 
 We developed a robotic system capable of autonomous navigation and perception in a simulated environment. The main objectives of the project were:
 
